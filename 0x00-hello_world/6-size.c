@@ -13,7 +13,7 @@ int main(void)
 	long long int d;
 	float e;
 
-	printf("Size of a: %d bytes\n", sizeof(a));
+	printf("Size of a: %d bytes\n", sizeof (a));
 	printf("Size of b: %d bytes\n", sizeof(b));
 	printf("Size of c: %d bytes\n", sizeof(c));
 	printf("Size of d: %d bytes\n", sizeof(d));
