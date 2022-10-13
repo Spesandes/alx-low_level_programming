@@ -13,9 +13,9 @@ int main(void)
 	long long int d;
 	float e;
 
-	printf("Size of a: %d bytes\n", sizeof (a));
-	printf("Size of b: %d bytes\n", sizeof(b));
-	printf("Size of c: %d bytes\n", sizeof(c));
-	printf("Size of d: %d bytes\n", sizeof(d));
-	printf("Size of e: %d bytes\n". sizeof(e));
+	printf("Size of a: %d byte(s)\n", sizeof(a));
+	printf("Size of b: %d byte(s)\n", sizeof(b));
+	printf("Size of c: %d byte(s)\n", sizeof(c));
+	printf("Size of d: %d byte(s)\n", sizeof(d));
+	printf("Size of e: %d byte(s)\n". sizeof(e));
 	return (0);
