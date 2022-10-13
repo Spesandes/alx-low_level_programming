@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /*
- * Main - Prints phrase
- *
+ * Main - Prints 
+ * Description: Prints a phrase to stdout
  * Return: Always 0 (Success)
  */
 int main(void)
