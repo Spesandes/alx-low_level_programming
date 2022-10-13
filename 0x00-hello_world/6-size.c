@@ -19,3 +19,4 @@ int main(void)
 	printf("Size of d: %d byte(s)\n", sizeof(d));
 	printf("Size of e: %d byte(s)\n". sizeof(e));
 	return (0);
+}
