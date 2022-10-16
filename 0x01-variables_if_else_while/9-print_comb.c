@@ -1,20 +1,22 @@
 #include <stdio.h>
 /**
- * main - Prints numbers in ascending order with a 
- * comma and a space
+ * main - Prints numbers followed by a coma
+ * and a space
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int number;
+	int numbers;
 
-	for (number = 0; number <= 9; number++)
+	for (numbers = 0; numbers <= 9; numbers++)
 	{
-		putchar((number % 10) + '0');
-		if (number == 9)
+		putchar((numbers % 10) + '0');
+	{
+		if (numbers == 9)
 			continue;
 		putchar(',');
 		putchar(' ');
+	}
 	}
 	putchar('\n');
 	return (0);
