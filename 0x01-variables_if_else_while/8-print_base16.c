@@ -9,7 +9,7 @@ int main(void)
 	int digits;
 	char hexa;
 
-	for (digits = 0; digits <= 10; digits++)
+	for (digits = 0; digits < 10; digits++)
 		putchar((digits % 10) + '0');
 	for (hexa = 'a'; hexa <= 'f'; hexa++)
 		putchar(hexa);
