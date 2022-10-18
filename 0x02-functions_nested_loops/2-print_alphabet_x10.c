@@ -2,9 +2,10 @@
 /**
  * print_alphabet_x10 - Prints 10x the alphabets in lowercase
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
-	int line = 0, alpha;
+	int line = 0;
+	int alpha;
 
 	while (line <= 9)
 	{
