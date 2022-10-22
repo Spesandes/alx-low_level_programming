@@ -17,11 +17,11 @@ int main(void)
 	y = 1;
 	z = 2;
 
-	printf("%lu", j);
+	printf("%lu", y);
 
 	for (x = 1; x < 91; x++)
 	{
-		printf(", %lu", k);
+		printf(", %lu", z);
 		z += y;
 		y = z - y;
 	}
@@ -38,7 +38,7 @@ int main(void)
 		z1 = z1 + y1;
 		y1 = z1 - y1;
 		z2 = z2 + y2;
-		j2 = z2 - y2;
+		z2 = z2 - y2;
 	}
 	printf("\n");
 
