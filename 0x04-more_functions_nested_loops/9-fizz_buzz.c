@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - prints numbers from 1 to 100, multiples of 3 print
- * fizz, multiples of 5 print buzz.
+ * main - prints numbers from 1 to 100, multiples of 3
+ * print fizz, multiples of 5 print buzz.
  * Return: 0
  */
 int main(void)
