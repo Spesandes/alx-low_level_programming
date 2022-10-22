@@ -22,7 +22,7 @@ int main(void)
 	for (x = 1; x < 91; x++)
 	{
 		printf(", %lu", z);
-		z = z + y
+		z = z + y;
 		y = z - y;
 	}
 
