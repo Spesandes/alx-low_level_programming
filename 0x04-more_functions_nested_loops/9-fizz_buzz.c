@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
- * main - prints numbers from 1 to 100, multiples of 3
- * print fizz, multiples of 5 print buzz.
+ * main - prints numbers from 1 to 100
+ * Description: Multiple of 3, print Fizz, multiples
+ * of 5, print Buzz.
+ * Multiples of 3 and 5 should print FizzBuzz.
  * Return: 0
  */
 int main(void)
@@ -11,7 +13,7 @@ int main(void)
 	x = 1;
 	while (x <= 100)
 	{
-		if ( x % 3 == 0 && x % 5 == 0)
+		if (x % 3 == 0 && x % 5 == 0)
 			printf("FizzBuzz");
 		else if (x % 3 == 0)
 			printf("Fizz");
