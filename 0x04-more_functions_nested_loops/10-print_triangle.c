@@ -2,7 +2,6 @@
 /**
  * print_triangle - This function prints a triangle
  * @size: The size of the base of the triangle
- * Return: 0
  */
 int print_triangle(int size)
 {
