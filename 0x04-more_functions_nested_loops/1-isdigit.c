@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * _sidigit - checks for a digit (0 through 9)
+ * _isdigit - checks for a digit (0 through 9)
  * @c: The checked argument
  * Return: 1 or 0
  */
