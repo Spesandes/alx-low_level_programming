@@ -6,33 +6,25 @@
  */
 char *cap_string(char *str)
 {
-	int i, j;
-	int trigger;
-	char nots[] = ",:.!?(){}\n\t\" ";
-	char nots[] = ",;.!?(){}\n\t\" ";
+	int i = 0, j;
+	char a[] = " \t\n,;.!?\"(){}";
 
-	for (i = 0; trigger = 0; str[i] != '\0'; i++)
+	while (*(s + i))
 	{
-		if (str[0] > 96 && str[0] < 123)
-			trigger = 1;
-		for (j = 0; nots[j] != '\0'; j++)
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
-			if (nots[j] == str[i])
-				trigger = 1;
-		}
-
-		if (trigger)
-		{
-			if (str[i] > 96 && str[i] < 123)
+			if (i == 0)
+				*(s + i) -= 'a' - 'A';
+			else
 			{
-				str[i] -= 32;
-				trigger = 0;
+				for (j = 0; j <= 12; j++)
+				{
+					if (a[j] == *(s + i - 1))
+						*(s + i) -= 'a' - 'A';
+				}
 			}
-			else if (str[i] > 64 && str[i] < 91)
-				trigger = 0;
-			else if (str[i] > 47 && str[i] < 58)
-				trigger = 0;
 		}
+		i++;
 	}
-	return (str);
+	return (s);
 }
