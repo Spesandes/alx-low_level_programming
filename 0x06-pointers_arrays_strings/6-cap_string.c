@@ -2,12 +2,12 @@
 /**
  * cap_string - capitalizes all words of a string
  * @str: string
- * Return: s
+ * Return: &s
  */
 char *cap_string(char *str)
 {
 	int i = 0, j;
-	char a[] = "\ \t\n,;.!?\"(){}";
+	char a[] = " \t\n,;.!?\"(){}";
 
 	while (*(s + i))
 	{
