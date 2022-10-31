@@ -6,7 +6,7 @@
  * @c: pointer to type char
  * Return: a pointer to the first character
  */
-char *_strchr(char *s, char)
+char *_strchr(char *s, char c)
 {
 	while (*s)
 	{
