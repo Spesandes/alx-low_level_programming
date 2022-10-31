@@ -18,11 +18,9 @@ unsigned int _strspn(char *s, char *accept)
 				if (s[j] == accept[j])
 					c++;
 			}
-			
 		}
 		else
-			return (c);
+			return (z);
 	}
 	return (z);
-
 }
