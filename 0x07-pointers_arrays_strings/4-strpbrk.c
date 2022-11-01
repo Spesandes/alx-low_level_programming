@@ -7,16 +7,23 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int i, j;
+	char *ip;
 
-	while (*s)
+	i = 0;
+	while (s[i] != '\0')
 	{
-		for (i = 0; accept[i]; i++)
+		j = 0;
+		while (accept[j] != '\0')
 		{
-			if (*s == accept[i])
-				return (s);
+			if (accep[j] == s[i])
+			{
+				ip = &s[i];
+				return (ip);
+			}
+			j++;
 		}
-		s++;
+		i++;
 	}
-	return (NULL);
+	return (0);
 }
