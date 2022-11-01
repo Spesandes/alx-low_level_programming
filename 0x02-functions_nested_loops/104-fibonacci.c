@@ -1,4 +1,7 @@
 #include <stdio.h>
+#define MAX 98
+#define TOTAL 100000000000
+
 /**
  * main - Prints the 1st 98 Fibonacci numbers
  * 1 and 2
@@ -6,41 +9,34 @@
  */
 int main(void)
 {
-	unsigned long int x;
-	unsigned long int y;
-	unsigned long int z;
-	unsigned long int y1;
-	unsigned long int y2;
-	unsigned long int z1;
-	unsigned long int z2;
+	int i;
+	unsigned long int num1x, num2y, nu2x, nu2y, stepa, stepb;
 
-	y = 1;
-	z = 2;
+	num1x = num2y = stepa = stepb = 0;
+	nu2x = 1;
+	nu2y = 2;
 
-	printf("%lu", y);
+	if (num1x)
+		printf("%lu%0*lu", num1x, 11, num2y);
+	else
+		printf("%lu", num2y);
 
-	for (x = 1; x < 91; x++)
+	for (i = 1; i < MAX; i++)
 	{
-		printf(", %lu", z);
-		z = z + y;
-		y = z - y;
-	}
-
-	y1 = y / 1000000000;
-	y2 = y % 1000000000;
-	z1 = z / 1000000000;
-	z2 = z % 1000000000;
-
-	for (x = 92; x < 99; ++x)
-	{
-		printf(", %lu", z1 + (z2 / 1000000000));
-		printf("%lu", z2 % 1000000000);
-		z1 = z1 + y1;
-		y1 = z1 - y1;
-		z2 = z2 + y2;
-		z2 = z2 - y2;
+		printf(", ");
+		if (nu2x)
+			printf("%lu%0*lu", nu2x, 11, nu2y);
+		else
+			printf("%lu", nu2y);
+		stepa = num1x;
+		stepb = num2y;
+		num1x = nu2x;
+		num2y = nu2y;
+		nu2x += stepa;
+		nu2y += stepb;
+		nu2x += nu2y / TOTAL;
+		nu2y %= TOTAL;
 	}
 	printf("\n");
-
 	return (0);
 }
