@@ -3,7 +3,7 @@
  * _strstr - locates first occurrence of @needle in @haystack
  * @haystack: pointer to char variable from which to search
  * @needle: pointer to char variable for which to search
- * Return: pointer to search for 
+ * Return: pointer to beginning of substring, else null
  */
 char *_strstr(char *haystack, char *needle)
 {
