@@ -5,3 +5,4 @@ This function fills the memory with a constant byte
 3-strspn.c - This function searches a string for a set of bytes
 4-strpbrk.c - This function searches a string for any set of bytes
 5-strstr.c - This function locates first occurrence of needle in haystack
+7-print_chessboard.c - This function prints the chessboard
