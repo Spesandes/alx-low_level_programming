@@ -12,8 +12,8 @@ int main(void)
 	int i;
 	unsigned long int num1x, num2y, nu2x, nu2y, stepa, stepb;
 
-	num1x = num2y = stepa = stepb = 0;
-	nu2x = 1;
+	num1x = nu2x = stepa = stepb = 0;
+	num2y = 1;
 	nu2y = 2;
 
 	if (num1x)
