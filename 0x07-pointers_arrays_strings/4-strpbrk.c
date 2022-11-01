@@ -8,7 +8,7 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
-	char *ip;
+	char *p;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -18,8 +18,8 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (accep[j] == s[i])
 			{
-				ip = &s[i];
-				return (ip);
+				p = &s[i];
+				return (p);
 			}
 			j++;
 		}
