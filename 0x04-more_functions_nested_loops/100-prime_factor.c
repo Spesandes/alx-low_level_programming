@@ -10,7 +10,7 @@
 int main(void)
 {
 	unsigned long int i = VAR;
-	unsigned lont int j = 2;
+	unsigned long int j = 2;
 
 	while (j < i)
 	{
