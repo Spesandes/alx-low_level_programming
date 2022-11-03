@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main - find and print the largest prime factor of VARI
@@ -9,7 +10,7 @@
 
 int main(void)
 {
-	unsigned long int i = VAR;
+	unsigned long int i = VARI;
 	unsigned long int j = 2;
 
 	while (j < i)
