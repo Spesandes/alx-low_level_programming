@@ -3,27 +3,21 @@
  * print_triangle - This function prints a triangle
  * @size: The size of the base of the triangle
  */
-int print_triangle(int size)
+void print_triangle(int size)
 {
-	int line, charactor, space;
+	int i, j, z;
 
-	if (size <= 0)
+	if (size > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (line = 0; line <= (size - 1); line++)
+		for (i = 1; i <= size; ++i)
 		{
-			for (space = 0; spaces < (size - 1) - line; space--)
-			{
+			for (j = size - i; j > 0; --j)
 				_putchar(' ');
-			}
-			for (charactor = 1; charactor <= line; hashes++)
-			{
+			for (x = 0; x < i; ++k)
 				_putchar('#');
-			}
 			_putchar('\n');
 		}
 	}
+	else
+		_putchar('\n');
 }
