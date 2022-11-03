@@ -13,9 +13,9 @@ int print_triangle(int size)
 	}
 	else
 	{
-		for (line = 1; line <= size; line++)
+		for (line = 0; line <= (size - 1); line++)
 		{
-			for (space = size - row; spaces >= 1; space--)
+			for (space = 0; spaces < (size - 1) - line; space--)
 			{
 				_putchar(' ');
 			}
